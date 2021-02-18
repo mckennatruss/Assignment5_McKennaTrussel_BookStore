@@ -19,7 +19,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
         public string AuthorLastName { get; set; }
         [Required]
         public string Publisher { get; set; }
-        [Required]
+
+        [Required, RegularExpression("[0-9]{3}-[0-9]{10}")]
         public string ISBN { get; set; }
         [Required]
         public string Classification { get; set; }

@@ -62,8 +62,7 @@ namespace Assignment5_McKennaTrussel_BookStore
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //no longer needed now that the database is live and set up!
-            //SeedData.EnsurePopulated(app);
+            SeedData.EnsurePopulated(app);
 
 
         }
