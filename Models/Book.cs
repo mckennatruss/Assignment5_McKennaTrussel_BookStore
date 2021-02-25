@@ -28,6 +28,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
         public string Category { get; set; }
         [Required]
         public decimal Price { get; set; }
+        [Required]
+        public int Pages { get; set; }
 
 
     }

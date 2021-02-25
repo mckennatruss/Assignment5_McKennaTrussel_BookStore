@@ -38,7 +38,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-0451419439",
                         Classification = "Fiction",
                         Category = "Classic",
-                        Price = new decimal(9.95)
+                        Price = new decimal(9.95),
+                        Pages = 1488
                     },
 
                     new Book
@@ -51,7 +52,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-0743270755",
                         Classification = "Non-Fiction",
                         Category = "Classic",
-                        Price = new decimal(14.58)
+                        Price = new decimal(14.58),
+                        Pages = 944
                     },
 
                     new Book
@@ -63,7 +65,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-0553384611",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = new decimal(21.54)
+                        Price = new decimal(21.54),
+                        Pages = 832
                     },
 
                     new Book
@@ -76,7 +79,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-0812981254",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = new decimal(11.61)
+                        Price = new decimal(11.61),
+                        Pages = 864
                     },
 
                     new Book
@@ -88,7 +92,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-0812974492",
                         Classification = "Non-Fiction",
                         Category = "Historical",
-                        Price = new decimal(13.33)
+                        Price = new decimal(13.33),
+                        Pages = 528
                     },
 
                     new Book
@@ -100,7 +105,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-0804171281",
                         Classification = "Fiction",
                         Category = "Historical Fiction",
-                        Price = new decimal(15.95)
+                        Price = new decimal(15.95),
+                        Pages = 288
                     },
 
                     new Book
@@ -112,7 +118,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-1455586691",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = new decimal(14.99)
+                        Price = new decimal(14.99),
+                        Pages = 304
                     },
 
                     new Book
@@ -124,7 +131,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-1455523023",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = new decimal(21.66)
+                        Price = new decimal(21.66),
+                        Pages = 240
                     },
 
 
@@ -137,7 +145,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-1591847984",
                         Classification = "Non-Fiction",
                         Category = "Business",
-                        Price = new decimal(29.16)
+                        Price = new decimal(29.16),
+                        Pages = 400
                     },
 
                     new Book
@@ -149,7 +158,48 @@ namespace Assignment5_McKennaTrussel_BookStore.Models
                         ISBN = "978-0553393613",
                         Classification = "Fiction",
                         Category = "Thriller",
-                        Price = new decimal(15.03)
+                        Price = new decimal(15.03),
+                        Pages = 642
+                    },
+
+                    new Book
+                    {
+                        Title = "One Hundred Birds Taught Me to Fly",
+                        AuthorFirstName = "Ashley",
+                        AuthorMiddleName = "M.",
+                        AuthorLastName = "Hoiland",
+                        Publisher = "Living Faith",
+                        ISBN = "978-0842529921",
+                        Classification = "Fiction",
+                        Category = "Religious",
+                        Price = new decimal(20.97),
+                        Pages = 211
+                    },
+
+                    new Book
+                    {
+                        Title = "How to Win Friends and Influence People",
+                        AuthorFirstName = "Dale",
+                        AuthorLastName = "Carnegie",
+                        Publisher = "Pocket Books",
+                        ISBN = "978-6710270304",
+                        Classification = "Non-Fiction",
+                        Category = "Self-Help",
+                        Price = new decimal(13.87),
+                        Pages = 234
+                    },
+
+                    new Book
+                    {
+                        Title = "Girl, Wash Your Face",
+                        AuthorFirstName = "Rachel",
+                        AuthorLastName = "Hollis",
+                        Publisher = "Nelson Books",
+                        ISBN = "978-1400201662",
+                        Classification = "Non-Fiction",
+                        Category = "Autobiography",
+                        Price = new decimal(24.17),
+                        Pages = 215
                     }
                 );
 

@@ -20,7 +20,8 @@ namespace Assignment5_McKennaTrussel_BookStore.Migrations
                     ISBN = table.Column<string>(nullable: false),
                     Classification = table.Column<string>(nullable: false),
                     Category = table.Column<string>(nullable: false),
-                    Price = table.Column<decimal>(nullable: false)
+                    Price = table.Column<decimal>(nullable: false),
+                    Pages = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
