@@ -9,33 +9,16 @@
     <h1 class="text-center text-info">McKenna's Online BookStore:</h1>
 </header>
 
-<body>
-    <br />
-    <br />
+
  
-        @foreach (var x in Model.Books)
-        {
-            <div class="text-info list-group-item-action">
-                <h5 class="col-lg-6">Title: @x.Title</h5>
-                <div class="row justify-content-around text-center">
-                    <p>Author: @x.AuthorFirstName @x.AuthorMiddleName @x.AuthorLastName</p>
-                    <p>Publisher: @x.Publisher</p>
-                    <p>ISBN: @x.ISBN</p>
-                </div>
-                <div class="row justify-content-around text-center">
-                    <p>Classification/Category: @x.Classification / @x.Category </p>
-                    <p>Price: $@x.Price</p>
-                    <p>Number of Pages: @x.Pages</p>
-                </div>
-            </div>
-            <br />
-            <br />
-        }
+@foreach (var x in Model.Books)
+{
+    <partial name="BookSummary" model="x" />
+}
 
-    <br />
-    <br />
 
-    <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
-         page-class="btn" page-class-normal="btn-outline-light"
-         page-class-selected="btn-info" class="btn-group pull-right m-1 pagination-lg"></div>
-</body>
+<div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
+        page-class="btn" page-class-normal="btn-outline-light"
+        page-class-selected="btn-info" page-url-category="@Model.CurrentCategory"
+     class="btn-group pull-right m-1 pagination-lg"></div>
+

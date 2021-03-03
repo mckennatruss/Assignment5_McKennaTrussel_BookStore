@@ -12,8 +12,14 @@
     <div class="bg-light">
         <span class="navbar-brand ml-3">Read a Good Book!</span>
     </div>
-    <div>
-        <div>
+
+    <div class="row m-1 p-1">
+        <div class="col-3">
+            <h1>Give the Gift of Books.</h1>
+            @*vc is view component*@
+            <vc:navigation-menu />
+        </div>
+        <div class="col-9">
             @RenderBody()
         </div>
     </div>

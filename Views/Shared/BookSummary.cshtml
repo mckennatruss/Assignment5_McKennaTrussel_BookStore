@@ -1,0 +1,18 @@
+﻿@model Book
+
+
+<div class="text-info list-group-item-action">
+    <h5>Title: @Model.Title</h5>
+    <div>
+        <p>Author: @Model.AuthorFirstName @Model.AuthorMiddleName @Model.AuthorLastName</p>
+        <p>Publisher: @Model.Publisher</p>
+        <p>ISBN: @Model.ISBN</p>
+    </div>
+    <div>
+        <p>Classification/Category: @Model.Classification / @Model.Category </p>
+        <p>Price: $@Model.Price</p>
+        <p>Number of Pages: @Model.Pages</p>
+    </div>
+</div>
+<br />
+<br />
