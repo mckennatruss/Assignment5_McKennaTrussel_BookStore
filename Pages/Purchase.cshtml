@@ -1,0 +1,54 @@
+﻿@page
+@model Assignment5_McKennaTrussel_BookStore.Pages.PurchaseModel
+@{
+}
+
+<h2>Your Cart</h2>
+
+<table class="table table-bordered table-striped">
+
+    <thead class="text-white">
+        <tr>
+            <th>Book</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody class="text-white">
+        @foreach (var line in Model.Cart.Lines)
+        {
+        <tr>
+            <td class="text-left">@line.Book.Title</td>
+            <td class="text-center">@line.Quantity</td>
+            <td class="text-right">@line.Book.Price</td>
+            <td class="text-right">@((line.Quantity * line.Book.Price).ToString("c"))</td>
+            <td class="text-center">
+                <form asp-page-handler="Remove" method="post">
+                    <input type="hidden" name="BookId"
+                           value="@line.Book.BookId" />
+                    <input type="hidden" name="returnUrl"
+                           value="@Model.ReturnUrl" />
+                    <button type="submit" class="btn btn-sm btn-info">
+                        Remove
+                    </button>
+                </form>
+            </td>
+        </tr>
+
+    }
+        </tbody>
+
+        <tfoot>
+            <tr class="text-info">
+                <td colspan="3" class="text-right">Total:</td>
+                <td class="text-right">@Model.Cart.ComputeTotalSum().ToString("c")</td>
+            </tr>
+        </tfoot>
+    </table>
+
+<div class="text-center">
+    <a class="btn btn-info" href="@Model.ReturnUrl">Continue Shopping</a>
+</div>

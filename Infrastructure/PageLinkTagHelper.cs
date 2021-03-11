@@ -49,7 +49,7 @@ namespace Assignment5_McKennaTrussel_BookStore.Infrastructure
                 TagBuilder tag = new TagBuilder("a");
                 
 
-                PageUrlValues["page"] = i;
+                PageUrlValues["pageNum"] = i;
                 tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
                 //tag.Attributes["href"] = urlHelper.Action(PageAction, new { page = i });
 

@@ -11,7 +11,7 @@ namespace Assignment5_McKennaTrussel_BookStore.Migrations
                 columns: table => new
                 {
                     BookId = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("Sqlite:Autoincrement", true),
                     Title = table.Column<string>(nullable: false),
                     AuthorFirstName = table.Column<string>(nullable: false),
                     AuthorMiddleName = table.Column<string>(nullable: true),
